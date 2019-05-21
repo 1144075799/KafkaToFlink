@@ -1,6 +1,6 @@
 # Kafka结合Flink学习项目
 
-## 1.Kafka+flink+mysql实现对单词的出现的单词数字进行统计，之后保存到数据库中
+## 1.Kafka+flink+mysql实现对单词的出现的单词数字进行统计,后保存到数据库
 
 
 
