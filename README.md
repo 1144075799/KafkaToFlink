@@ -4,7 +4,7 @@
 
 
 
-## 2.Kafka+flink 实现真正的计算
+## 2.Kafka+flink 实现真正的流计算
 
 
 
