@@ -34,6 +34,8 @@ public class FlinkCostKafka {
 
         counts= stream.flatMap(new LineSplitter()).keyBy(0).window(ProcessingTimeSessionWindows.withGap(Time.seconds(2))).sum(1);
 
+        counts.addSink(new MySQLSink());
+
         counts.print().setParallelism(1);
 
         env.execute("FlinkCostKafka");

@@ -28,7 +28,7 @@ public class KafkaProducerTest implements Runnable {
         int messageNo = 1;
         try {
             for(;;) {
-                String messageStr="hello，this is "+messageNo+" messages";
+                String messageStr="hello,this is "+messageNo+" messages";
                 producer.send(new ProducerRecord<String, String>(topic, "Message", messageStr));
                 //生产了100条就打印
                 if(messageNo%100==0){
